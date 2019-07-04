@@ -1,0 +1,19 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+
+def binary_search(sorted_nums, num):
+    low_pos = 0
+    high_pos = len(sorted_nums) - 1
+
+    while low_pos <= high_pos:
+        cur_pos = (low_pos + high_pos) / 2
+        if sorted_nums[cur_pos] == num:
+            return cur_pos
+        elif sorted_nums[cur_pos] < num:
+            low_pos = cur_pos + 1
+        else:
+            high_pos = cur_pos - 1
+    return -1
+
+print binary_search([1,2,3,4], 4)
