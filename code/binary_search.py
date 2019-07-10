@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# 时间复杂度O(logn)
 
 
 def binary_search(sorted_nums, num):
